@@ -1,4 +1,4 @@
-"""產生 Cue Sheet「臺灣近期活動」欄目的 HTML 片段與預覽頁。
+"""產生 Cue Sheet「近期國內電影音樂活動」欄目的 HTML 片段與預覽頁。
 
 用法：python build_section.py events.json 發刊日(YYYY-MM-DD) 天數 輸出檔 [線上活動頁網址]
 """
@@ -111,7 +111,7 @@ def section_html(rows, issue_date, days, page_url):
     end = issue_date + timedelta(days=days - 1)
     parts = [f"""<!-- 11 TAIWAN EVENTS -->
 <tr><td class="pad" style="padding:24px 28px 4px 28px;">
-  <div style="margin:0 0 14px;padding-top:8px;border-top:1px solid #28251D;font-family:{SANS};font-size:13px;font-weight:700;letter-spacing:.08em;line-height:1.4;color:#28251D;">臺灣近期活動 <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7A7974;margin-left:8px;">Upcoming in Taiwan</span></div>
+  <div style="margin:0 0 14px;padding-top:8px;border-top:1px solid #28251D;font-family:{SANS};font-size:13px;font-weight:700;letter-spacing:.08em;line-height:1.4;color:#28251D;">近期國內電影音樂活動 <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7A7974;margin-left:8px;">Upcoming in Taiwan</span></div>
 </td></tr>
 <tr><td class="pad" style="padding:0 28px 4px 28px;">
 <div style="font-size:14px;line-height:1.7;color:#55534C;margin-bottom:6px;">{issue_date.month}/{issue_date.day}–{end.month}/{end.day} 全台電影、動畫與遊戲音樂的音樂會與講座，依地區、日期排列。</div>"""]
@@ -132,7 +132,7 @@ def section_html(rows, issue_date, days, page_url):
 def preview_page(section):
     return f"""<!DOCTYPE html>
 <html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cue Sheet｜臺灣近期活動欄（試排）</title>
+<title>Cue Sheet｜近期國內電影音樂活動欄（試排）</title>
 <style>@media (max-width:540px){{.pad{{padding-left:16px!important;padding-right:16px!important}}}}</style></head>
 <body style="margin:0;padding:0;background:#F2F0EA;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#F2F0EA;"><tr><td align="center" style="padding:20px 10px;">
