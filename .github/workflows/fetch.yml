@@ -23,6 +23,6 @@ jobs:
         run: |
           git config user.name "cuesheet-bot"
           git config user.email "actions@users.noreply.github.com"
-          for f in events.json last_run.json; do [ -f "$f" ] && git add "$f"; done
+          for f in events.json last_run.json all_events_index.json; do [ -f "$f" ] && git add "$f"; done
           git diff --cached --quiet || git commit -m "更新活動資料 $(date -u +%F)"
           git push

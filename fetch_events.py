@@ -70,6 +70,7 @@ def main():
     today = datetime.now(TW).date()
     log = {"run_at": datetime.now(TW).isoformat(timespec="seconds"), "categories": {}}
     events, seen = [], set()
+    index = []  # 所有抓到的活動（未篩選），供檢查漏抓
 
     for cat, name in CATEGORIES.items():
         try:
@@ -80,6 +81,15 @@ def main():
             continue
 
         for ev in data:
+            index.append({
+                "uid": ev.get("UID"),
+                "category": name,
+                "title": ev.get("title") or ev.get("titile") or "",
+                "performer": ev.get("showUnit") or "",
+                "description": ev.get("descriptionFilterHtml") or "",
+                "web": ev.get("sourceWebPromote") or "",
+                "start_date": ev.get("startDate"),
+            })
             uid = ev.get("UID")
             if uid in seen:
                 continue
@@ -132,6 +142,8 @@ def main():
             json.dump({"updated": log["run_at"],
                        "source": "文化部藝文活動開放資料（政府資料開放授權條款）",
                        "events": events}, f, ensure_ascii=False, indent=1)
+        with open("all_events_index.json", "w", encoding="utf-8") as f:
+            json.dump(index, f, ensure_ascii=False, indent=0)
     with open("last_run.json", "w", encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=1)
 
