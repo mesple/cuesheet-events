@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T00:27:39+08:00",
+ "updated": "2026-10-16T00:28:37+08:00",
  "source": "文化部藝文活動開放資料（政府資料開放授權條款）",
  "events": [
   {
@@ -88,9 +88,7 @@
     }
    ],
    "matched_keywords": [
-    "動畫",
-    "樂團",
-    "音樂"
+    "宮崎駿"
    ]
   },
   {
@@ -123,7 +121,8 @@
     }
    ],
    "matched_keywords": [
-    "配樂"
+    "配樂",
+    "宮崎駿"
    ]
   },
   {
@@ -195,6 +194,39 @@
    ]
   },
   {
+   "uid": "6acd158126b324165c32e5db",
+   "title": "【ESO 2026】一夜，從百老匯到好萊塢──后正宇與ESO",
+   "category": "音樂",
+   "start_date": "2026/12/18",
+   "end_date": "2026/12/18",
+   "organizer": [],
+   "performer": "",
+   "description": "",
+   "image": null,
+   "web": "https://www.opentix.life/program/2107675617423958017",
+   "tickets": "https://www.opentix.life/program/2107675617423958017",
+   "source_site": "OPENTIX兩廳院文化生活",
+   "cities": [
+    "苗栗縣"
+   ],
+   "shows": [
+    {
+     "time": "2026/12/18 19:30:00",
+     "end_time": "2026/12/18 22:00:00",
+     "venue": "苗北藝文中心演藝廳",
+     "address": "苗栗縣竹南鎮公園路206號",
+     "city": "苗栗縣",
+     "lat": "24.6907345",
+     "lng": "120.8859459",
+     "on_sale": "Y",
+     "price": ""
+    }
+   ],
+   "matched_keywords": [
+    "好萊塢"
+   ]
+  },
+  {
    "uid": "699dd9cf26b32454e437ca83",
    "title": "狂美《宮崎駿動畫配樂II》交響音樂會-2026暖心巡演",
    "category": "音樂",
@@ -235,7 +267,8 @@
     }
    ],
    "matched_keywords": [
-    "配樂"
+    "配樂",
+    "宮崎駿"
    ]
   },
   {
@@ -280,9 +313,7 @@
     }
    ],
    "matched_keywords": [
-    "動畫",
-    "樂團",
-    "音樂"
+    "宮崎駿"
    ]
   },
   {
