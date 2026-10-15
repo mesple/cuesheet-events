@@ -1,23 +1,23 @@
 {
- "run_at": "2026-10-16T00:55:54+08:00",
+ "run_at": "2026-10-16T02:51:57+08:00",
  "categories": {
   "音樂": {
-   "fetched": 489,
+   "fetched": 19,
    "error": null
   },
   "講座": {
-   "fetched": 136,
+   "fetched": 97,
    "error": null
   },
   "電影": {
-   "fetched": 201,
+   "fetched": 5,
    "error": null
   },
   "演唱會": {
-   "fetched": 11,
+   "fetched": 1,
    "error": null
   }
  },
- "matched_events": 11,
- "candidates": 4
+ "matched_events": 1,
+ "candidates": 0
 }
