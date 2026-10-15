@@ -32,6 +32,14 @@ Hans Zimmer
 莫利克奈
 Morricone
 新天堂樂園
+動漫
+ACG
+Anime
+電玩
+遊戲音樂
+遊戲配樂
+game music
+video game
 
 [電影類]
 電影
@@ -54,10 +62,5 @@ orchestra
 
 [候補]
 卡通
-動漫
-ACG
-電玩
-遊戲音樂
-game music
 百老匯
 Broadway
