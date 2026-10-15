@@ -61,4 +61,3 @@ ACG
 game music
 百老匯
 Broadway
-音樂劇
