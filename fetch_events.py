@@ -29,7 +29,8 @@ def load_keywords(path="keywords.txt"):
             groups[current] = []
         elif current:
             groups[current].append(line.lower())
-    return groups.get("強關鍵字", []), groups.get("電影類", []), groups.get("音樂類", [])
+    return (groups.get("強關鍵字", []), groups.get("電影類", []), groups.get("音樂類", []),
+            groups.get("候補", []))
 
 
 def matches(text, strong, film, music):
@@ -66,7 +67,8 @@ def fetch(cat):
 
 
 def main():
-    strong, film, music = load_keywords()
+    strong, film, music, maybe = load_keywords()
+    candidates = []
     today = datetime.now(TW).date()
     log = {"run_at": datetime.now(TW).isoformat(timespec="seconds"), "categories": {}}
     events, seen = [], set()
@@ -97,6 +99,13 @@ def main():
             text = " ".join([title, ev.get("descriptionFilterHtml") or "", ev.get("showUnit") or ""])
             hit = matches(text, strong, film, music)
             if not hit:
+                weak = [k for k in maybe if k in text.lower()]
+                end = parse_date(ev.get("endDate") or "")
+                if weak and not (end and end.date() < today):
+                    candidates.append({"title": title, "category": name,
+                                       "start_date": ev.get("startDate"),
+                                       "web": ev.get("sourceWebPromote"),
+                                       "matched_keywords": weak})
                 continue
             end = parse_date(ev.get("endDate") or "")
             if end and end.date() < today:
@@ -135,6 +144,7 @@ def main():
 
     events.sort(key=lambda e: e.get("start_date") or "")
     log["matched_events"] = len(events)
+    log["candidates"] = len(candidates)
     ok = any(v["error"] is None for v in log["categories"].values())
 
     if ok:  # 全部類別都失敗時，保留上一次的 events.json，不用空檔覆蓋
@@ -142,6 +152,8 @@ def main():
             json.dump({"updated": log["run_at"],
                        "source": "文化部藝文活動開放資料（政府資料開放授權條款）",
                        "events": events}, f, ensure_ascii=False, indent=1)
+        with open("candidates.json", "w", encoding="utf-8") as f:
+            json.dump(candidates, f, ensure_ascii=False, indent=1)
         with open("all_events_index.json", "w", encoding="utf-8") as f:
             json.dump(index, f, ensure_ascii=False, indent=0)
     with open("last_run.json", "w", encoding="utf-8") as f:

@@ -1,5 +1,6 @@
 # Cue Sheet 活動篩選關鍵字（可自行增刪，一行一個，# 開頭為註解）
 # 規則：符合「強關鍵字」任一個就收；否則要同時符合「電影類」與「音樂類」各一個才收。
+# 「候補」：只符合候補字的活動不直接收，另存 candidates.json 給編輯逐筆決定。
 
 [強關鍵字]
 配樂
@@ -13,6 +14,24 @@ film music
 久石讓
 吉卜力
 Ghibli
+宮崎駿
+好萊塢
+Hollywood
+迪士尼
+Disney
+皮克斯
+Pixar
+星際大戰
+哈利波特
+漫威
+John Williams
+約翰威廉斯
+Hans Zimmer
+漢斯季默
+坂本龍一
+莫利克奈
+Morricone
+新天堂樂園
 
 [電影類]
 電影
@@ -32,3 +51,14 @@ cinema
 concert
 symphony
 orchestra
+
+[候補]
+卡通
+動漫
+ACG
+電玩
+遊戲音樂
+game music
+百老匯
+Broadway
+音樂劇
