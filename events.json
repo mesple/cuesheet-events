@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T00:28:37+08:00",
+ "updated": "2026-10-16T00:55:54+08:00",
  "source": "文化部藝文活動開放資料（政府資料開放授權條款）",
  "events": [
   {
@@ -89,6 +89,53 @@
    ],
    "matched_keywords": [
     "宮崎駿"
+   ]
+  },
+  {
+   "uid": "68b5d5f926b32440a8964235",
+   "title": "2026風動室內樂團《無限》ACG電玩動漫音樂會",
+   "category": "音樂",
+   "start_date": "2026/10/31",
+   "end_date": "2026/12/13",
+   "organizer": [],
+   "performer": "",
+   "description": "",
+   "image": null,
+   "web": "https://www.opentix.life/program/1955916913608867841",
+   "tickets": "https://www.opentix.life/program/1955916913608867841",
+   "source_site": "OPENTIX兩廳院文化生活",
+   "cities": [
+    "桃園市",
+    "臺北市"
+   ],
+   "shows": [
+    {
+     "time": "2026/10/31 19:30:00",
+     "end_time": "2026/10/31 21:10:00",
+     "venue": "桃園展演中心展演廳",
+     "address": "桃園市桃園區中正路1188號",
+     "city": "桃園市",
+     "lat": "25.0175106",
+     "lng": "121.2986658",
+     "on_sale": "Y",
+     "price": ""
+    },
+    {
+     "time": "2026/12/13 19:30:00",
+     "end_time": "2026/12/13 21:10:00",
+     "venue": "臺北表演藝術中心 大劇院",
+     "address": "臺北市士林區劍潭路1號",
+     "city": "臺北市",
+     "lat": "25.0847069488325",
+     "lng": "121.524399267913",
+     "on_sale": "Y",
+     "price": ""
+    }
+   ],
+   "matched_keywords": [
+    "動漫",
+    "acg",
+    "電玩"
    ]
   },
   {
@@ -269,6 +316,51 @@
    "matched_keywords": [
     "配樂",
     "宮崎駿"
+   ]
+  },
+  {
+   "uid": "6a4bdfd926b32427d0604121",
+   "title": "2027風動室內樂團《無限》ACG交響音樂會",
+   "category": "音樂",
+   "start_date": "2027/01/08",
+   "end_date": "2027/05/29",
+   "organizer": [],
+   "performer": "",
+   "description": "",
+   "image": null,
+   "web": "https://www.opentix.life/program/2068970591988879361",
+   "tickets": "https://www.opentix.life/program/2068970591988879361",
+   "source_site": "OPENTIX兩廳院文化生活",
+   "cities": [
+    "桃園市",
+    "臺中市"
+   ],
+   "shows": [
+    {
+     "time": "2027/01/08 19:30:00",
+     "end_time": "2027/01/08 21:10:00",
+     "venue": "臺中市中山堂",
+     "address": "臺中市北區學士路98號",
+     "city": "臺中市",
+     "lat": "24.155298",
+     "lng": "120.682756",
+     "on_sale": "Y",
+     "price": ""
+    },
+    {
+     "time": "2027/05/29 19:30:00",
+     "end_time": "2027/05/29 21:10:00",
+     "venue": "中壢藝術館音樂廳",
+     "address": "桃園市中壢區中美路16號",
+     "city": "桃園市",
+     "lat": "24.9582226",
+     "lng": "121.2275687",
+     "on_sale": "Y",
+     "price": ""
+    }
+   ],
+   "matched_keywords": [
+    "acg"
    ]
   },
   {
