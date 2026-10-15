@@ -1,0 +1,34 @@
+# Cue Sheet 活動篩選關鍵字（可自行增刪，一行一個，# 開頭為註解）
+# 規則：符合「強關鍵字」任一個就收；否則要同時符合「電影類」與「音樂類」各一個才收。
+
+[強關鍵字]
+配樂
+原聲帶
+電影音樂
+影視音樂
+電影交響
+soundtrack
+film score
+film music
+久石讓
+吉卜力
+Ghibli
+
+[電影類]
+電影
+影展
+影視
+動畫
+film
+movie
+cinema
+
+[音樂類]
+音樂會
+交響
+樂團
+演奏
+音樂
+concert
+symphony
+orchestra
