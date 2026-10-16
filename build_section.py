@@ -153,7 +153,14 @@ def section_html(rows, issue_date, days, page_url):
         parts += [item_html(*it) for it in items]
         parts.append("</table>")
     if page_url and page_url != "#":  # 線上活動頁建好才顯示
-        parts.append(f"""<div style="margin-top:16px;padding:12px 14px;background:#EEF4F3;border-left:3px solid #01696F;font-size:14px;line-height:1.7;">依城市篩選、加入行事曆：<a href="{page_url}" style="color:#01696F;font-weight:700;">線上活動頁</a></div>""")
+        from urllib.parse import quote
+        btn = ("display:inline-block;margin:6px 6px 0 0;padding:4px 12px;border:1px solid #01696F;"
+               "border-radius:999px;color:#01696F;font-weight:700;text-decoration:none;font-size:13px;line-height:1.6;background:#FFFFFF;")
+        links = "".join(f'<a href="{page_url}?region={quote(name)}" style="{btn}">{name}</a>'
+                        for name, _ in REGIONS)
+        parts.append(f"""<div style="margin-top:16px;padding:12px 14px;background:#EEF4F3;border-left:3px solid #01696F;font-size:14px;line-height:1.7;">
+<div>看你所在地區的完整場次、加入行事曆：</div>
+<div>{links}<a href="{page_url}" style="{btn}">全部</a></div></div>""")
     parts.append(f"""<div style="font-family:{SANS};font-size:11px;line-height:1.6;color:#7A7974;margin-top:12px;">活動資料來源：文化部藝文活動開放資料、各主辦單位公告與新聞報導；場次以主辦單位公告為準。</div>
 </td></tr>""")
     return "\n".join(parts)
