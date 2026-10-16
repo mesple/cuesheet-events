@@ -11,6 +11,16 @@ from datetime import date, datetime, timezone, timedelta
 
 API = "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category={}"
 CATEGORIES = {"1": "音樂", "7": "講座", "8": "電影", "17": "演唱會"}
+# 某類別筆數低於基準的這個比例，就視為 API 回傳不完整（2026-10-16 曾發生：音樂類 489 筆掉到 19 筆）
+SHRINK_LIMIT = 0.5
+
+
+def load_json(path, default):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return default
 TW = timezone(timedelta(hours=8))
 CITIES = ["臺北市", "新北市", "桃園市", "臺中市", "臺南市", "高雄市", "基隆市", "新竹市",
           "嘉義市", "新竹縣", "苗栗縣", "彰化縣", "南投縣", "雲林縣", "嘉義縣", "屏東縣",
@@ -74,13 +84,30 @@ def main():
     events, seen = [], set()
     index = []  # 所有抓到的活動（未篩選），供檢查漏抓
 
+    # 上一次的結果：用來偵測「API 只回傳一小部分資料」的情況
+    prev_log = load_json("last_run.json", {}).get("categories", {})
+    prev_events = load_json("events.json", {}).get("events", [])
+    prev_index = load_json("all_events_index.json", [])
+    carried = []  # 沿用上一次資料的類別
+
     for cat, name in CATEGORIES.items():
+        prev = prev_log.get(name, {})
+        baseline = prev.get("baseline") or prev.get("fetched") or 0
         try:
             data = fetch(cat)
-            log["categories"][name] = {"fetched": len(data), "error": None}
         except Exception as e:  # 記錄失敗原因，不中斷其他類別
-            log["categories"][name] = {"fetched": 0, "error": f"{type(e).__name__}: {e}"}
+            log["categories"][name] = {"fetched": 0, "baseline": baseline,
+                                       "error": f"{type(e).__name__}: {e}"}
+            carried.append(name)
             continue
+        if baseline >= 20 and len(data) < baseline * SHRINK_LIMIT:
+            # 筆數驟降：視為資料不完整，這個類別沿用上一次的結果
+            log["categories"][name] = {
+                "fetched": len(data), "baseline": baseline,
+                "error": f"疑似資料不完整：本次 {len(data)} 筆，基準 {baseline} 筆，沿用上次資料"}
+            carried.append(name)
+            continue
+        log["categories"][name] = {"fetched": len(data), "baseline": len(data), "error": None}
 
         for ev in data:
             index.append({
@@ -141,6 +168,17 @@ def main():
                 "shows": shows,
                 "matched_keywords": hit,
             })
+
+    # 沿用類別：帶回上一次的活動（已結束的仍然排除）與索引
+    for name in carried:
+        for ev in prev_events:
+            end = parse_date(ev.get("end_date") or "")
+            if ev.get("category") == name and ev.get("uid") not in seen \
+                    and not (end and end.date() < today):
+                seen.add(ev.get("uid"))
+                events.append(ev)
+        index += [e for e in prev_index if e.get("category") == name]
+    log["carried_over"] = carried
 
     events.sort(key=lambda e: e.get("start_date") or "")
     log["matched_events"] = len(events)

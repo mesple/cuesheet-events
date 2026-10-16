@@ -3,6 +3,7 @@
 用法：python build_section.py events.json 發刊日(YYYY-MM-DD) 天數 輸出檔 [線上活動頁網址]
 """
 import json
+import os
 import sys
 from datetime import datetime, timedelta
 from html import escape
@@ -49,6 +50,23 @@ def short_venue(v):
     return (v or "").replace("臺北市", "").replace("（", "（").strip() or "場地未標示"
 
 
+def norm_venue(v):
+    return (v or "").replace("臺", "台").replace(" ", "").replace("國家音樂廳", "音樂廳")
+
+
+def merge_manual(events, manual):
+    """把新聞補漏的活動併入：同一天、同場館已在開放資料中的場次不重複列。"""
+    have = {(parse(s["time"]).date(), norm_venue(s["venue"]))
+            for ev in events for s in ev["shows"] if parse(s["time"])}
+    merged = list(events)
+    for ev in manual:
+        shows = [s for s in ev["shows"]
+                 if (parse(s["time"]).date(), norm_venue(s["venue"])) not in have]
+        if shows:
+            merged.append(dict(ev, shows=shows))
+    return merged
+
+
 def build(events, issue_date, days):
     start = issue_date
     end = issue_date + timedelta(days=days)
@@ -78,7 +96,11 @@ def item_html(first, ev, shows):
     if len(dates) == 1:
         d = dates[0]
         date_txt = f"{d.month}/{d.day}"
-        sub = f"（{WEEK[d.weekday()]}）{first:%H:%M}"
+        if any(s.get("time_tbd") for _, s in shows):
+            times = "時間未公布"
+        else:
+            times = "、".join(sorted({f"{t:%H:%M}" for t, _ in shows}))
+        sub = f"（{WEEK[d.weekday()]}）{times}"
     else:
         if len(dates) <= 3:
             date_txt = "<br>".join(f"{d.month}/{d.day}" for d in dates)
@@ -93,10 +115,17 @@ def item_html(first, ev, shows):
     link = ev.get("tickets") or ev.get("web")
     link_html = (f' · <a href="{escape(link)}" style="color:#01696F;">購票／詳情</a>'
                  if link else "")
-    org = ev.get("organizer") or ev.get("performer") or ""
+    org = ev.get("organizer") or ""
     if isinstance(org, list):
         org = "、".join(o for o in org if o)
-    org_html = f" · 主辦：{escape(org)}" if org else ""
+    if org:
+        org_html = f" · 主辦：{escape(org)}"
+    elif ev.get("performer"):
+        org_html = f" · 演出：{escape(ev['performer'])}"
+    else:
+        org_html = ""
+    if ev.get("note"):
+        org_html += f" · {escape(ev['note'])}"
     return f"""<tr>
 <td width="86" valign="top" style="padding:10px 12px 10px 0;border-top:1px dotted #D4D1CA;font-family:{SANS};">
 <div style="font-size:17px;font-weight:700;line-height:1.2;color:#28251D;">{date_txt}</div>
@@ -150,7 +179,13 @@ if __name__ == "__main__":
     src, issue, days, out = sys.argv[1], sys.argv[2], int(sys.argv[3]), sys.argv[4]
     data = json.load(open(src, encoding="utf-8"))
     issue_date = datetime.strptime(issue, "%Y-%m-%d")
-    rows, dropped = build(data["events"], issue_date, days)
+    events = data["events"]
+    manual_path = os.path.join(os.path.dirname(os.path.abspath(src)), "manual_events.json")
+    if os.path.exists(manual_path):  # 新聞搜尋補漏的活動（民間主辦、未登錄開放資料）
+        manual = json.load(open(manual_path, encoding="utf-8")).get("events", [])
+        events = merge_manual(events, manual)
+        print("manual events:", len(manual))
+    rows, dropped = build(events, issue_date, days)
     sec = section_html(rows, issue_date, days, sys.argv[5] if len(sys.argv) > 5 else "#")
     open(out, "w", encoding="utf-8").write(preview_page(sec))
     open(out.replace(".html", "_section.html"), "w", encoding="utf-8").write(sec)
