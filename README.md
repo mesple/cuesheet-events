@@ -25,3 +25,12 @@ Cue Sheet 電子報的臺灣電影音樂活動資料。
 ## 抓取防護（2026-10-17 新增）
 
 API 偶爾只回傳部分資料（2026-10-16 音樂類從 489 筆掉到 19 筆）。某類別筆數低於基準的 50% 時，該類別視為不完整，沿用上一次的活動，`last_run.json` 會記錄原因與 `carried_over`。
+
+## 線上活動頁（index.html，2026-10-17 新增）
+
+網址：https://mesple.github.io/cuesheet-events/（需在 repo 的 Settings → Pages 開啟：Source 選 Deploy from a branch，Branch 選 main、/ (root)）
+
+- 直接讀取同一 repo 的 `events.json` 與 `manual_events.json`，每天 Actions 更新資料後頁面自動跟著更新，不需另外部署。
+- 可依地區、城市、類型篩選；每場可加入 Google 日曆或下載 .ics（Apple 行事曆、Outlook）。
+- 篩選條件會寫進網址，電子報可直接連到特定地區，例如 `?region=南部`、`?city=臺中市`。
+- 產生電子報欄目時把網址當第 5 個參數傳給 `build_section.py`，欄尾就會出現「線上活動頁」連結框。
