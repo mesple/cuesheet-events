@@ -152,8 +152,9 @@ def section_html(rows, issue_date, days, page_url):
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;">""")
         parts += [item_html(*it) for it in items]
         parts.append("</table>")
-    parts.append(f"""<div style="margin-top:16px;padding:12px 14px;background:#EEF4F3;border-left:3px solid #01696F;font-size:14px;line-height:1.7;">依城市篩選、加入行事曆：<a href="{page_url}" style="color:#01696F;font-weight:700;">線上活動頁</a></div>
-<div style="font-family:{SANS};font-size:11px;line-height:1.6;color:#7A7974;margin-top:6px;">活動資料來源：文化部藝文活動開放資料、各主辦單位；場次以主辦單位公告為準。</div>
+    if page_url and page_url != "#":  # 線上活動頁建好才顯示
+        parts.append(f"""<div style="margin-top:16px;padding:12px 14px;background:#EEF4F3;border-left:3px solid #01696F;font-size:14px;line-height:1.7;">依城市篩選、加入行事曆：<a href="{page_url}" style="color:#01696F;font-weight:700;">線上活動頁</a></div>""")
+    parts.append(f"""<div style="font-family:{SANS};font-size:11px;line-height:1.6;color:#7A7974;margin-top:12px;">活動資料來源：文化部藝文活動開放資料、各主辦單位公告與新聞報導；場次以主辦單位公告為準。</div>
 </td></tr>""")
     return "\n".join(parts)
 
