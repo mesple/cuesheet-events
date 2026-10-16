@@ -1,28 +1,28 @@
 {
- "run_at": "2026-10-16T00:55:54+08:00",
+ "run_at": "2026-10-17T01:15:29+08:00",
  "categories": {
   "音樂": {
-   "fetched": 489,
-   "error": null,
-   "baseline": 489
+   "fetched": 491,
+   "baseline": 491,
+   "error": null
   },
   "講座": {
-   "fetched": 136,
-   "error": null,
-   "baseline": 136
+   "fetched": 130,
+   "baseline": 130,
+   "error": null
   },
   "電影": {
-   "fetched": 201,
-   "error": null,
-   "baseline": 201
+   "fetched": 196,
+   "baseline": 196,
+   "error": null
   },
   "演唱會": {
    "fetched": 11,
-   "error": null,
-   "baseline": 11
+   "baseline": 11,
+   "error": null
   }
  },
+ "carried_over": [],
  "matched_events": 11,
- "candidates": 4,
- "note": "2026-10-17 手動還原：10/16 02:51 的抓取音樂類只回傳 19 筆，改回 00:55 的完整資料"
+ "candidates": 4
 }
