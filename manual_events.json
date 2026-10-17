@@ -82,17 +82,17 @@
    "organizer": [],
    "performer": "高雄市管樂團、高雄室內合唱團；指揮 Thanapol Setabrahmana",
    "web": "https://www.4gamers.com.tw/news/detail/81463/world-of-warcraft-20-years-of-music-kaosiung-2026",
-   "tickets": "https://ibontw.com/WOW20",
+   "tickets": "https://ticket.ibon.com.tw/ActivityInfo/Details/39885",
    "source": "新聞",
-   "note": "依新聞，未經官方頁確認；開演時間未公布",
+   "note": "開演時間依 ibon 售票頁（編輯 10/18 確認）",
    "source_links": [
+    "https://ticket.ibon.com.tw/ActivityInfo/Details/39885",
     "https://www.4gamers.com.tw/news/detail/81463/world-of-warcraft-20-years-of-music-kaosiung-2026",
     "https://art.ltn.com.tw/article/breakingnews/5549005"
    ],
    "shows": [
     {
-     "time": "2026/12/12",
-     "time_tbd": true,
+     "time": "2026/12/12 14:30:00",
      "venue": "高雄市文化中心至德堂",
      "city": "高雄市"
     }
