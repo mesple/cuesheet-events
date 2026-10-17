@@ -1,12 +1,14 @@
 {
  "說明": "新聞搜尋補漏：民間主辦、未登錄文化部開放資料的活動。格式同 events.json；source 一律為「新聞」，source_links 列出確認用的主辦頁或新聞。時間未公布的場次 time 只寫日期並加 time_tbd。編輯每期更新，過期場次由 build_section.py 自動略過。",
- "updated": "2026-10-17",
+ "updated": "2026-10-18",
  "events": [
   {
    "uid": "manual-mna-twilight-new-moon-2026",
    "title": "《暮光之城：新月》電影音樂會",
    "category": "音樂",
-   "organizer": ["MNA牛耳藝術"],
+   "organizer": [
+    "MNA牛耳藝術"
+   ],
    "performer": "NSO國家交響樂團（室內樂 11 人編制）、雙歌手與樂隊",
    "web": "https://ticket.mna.com.tw/UTK0201_?PRODUCT_ID=P1FZSCBD",
    "tickets": "https://ticket.mna.com.tw/UTK0201_?PRODUCT_ID=P1FZSCBD",
@@ -17,16 +19,30 @@
     "https://art.ltn.com.tw/article/paper/1772736"
    ],
    "shows": [
-    {"time": "2026/11/07 16:00:00", "venue": "衛武營歌劇院", "city": "高雄市"},
-    {"time": "2026/11/08 13:00:00", "venue": "國家音樂廳", "city": "臺北市"},
-    {"time": "2026/11/08 17:00:00", "venue": "國家音樂廳", "city": "臺北市"}
+    {
+     "time": "2026/11/07 16:00:00",
+     "venue": "衛武營歌劇院",
+     "city": "高雄市"
+    },
+    {
+     "time": "2026/11/08 13:00:00",
+     "venue": "國家音樂廳",
+     "city": "臺北市"
+    },
+    {
+     "time": "2026/11/08 17:00:00",
+     "venue": "國家音樂廳",
+     "city": "臺北市"
+    }
    ]
   },
   {
    "uid": "manual-mna-interstellar-live-2026",
    "title": "《星際效應》電影交響音樂會",
    "category": "音樂",
-   "organizer": ["MNA牛耳藝術"],
+   "organizer": [
+    "MNA牛耳藝術"
+   ],
    "performer": "國立臺灣交響樂團（NTSO）；指揮 Matt Dunkley；管風琴 Charles Andrews",
    "web": "https://ticket.mna.com.tw/UTK0201_?PRODUCT_ID=P1FZYU6O",
    "tickets": "https://ticket.mna.com.tw/UTK0201_?PRODUCT_ID=P1FZYU6O",
@@ -37,10 +53,26 @@
     "https://www.ctee.com.tw/news/20261005700791-431207"
    ],
    "shows": [
-    {"time": "2026/11/27 19:00:00", "venue": "臺中國家歌劇院", "city": "臺中市"},
-    {"time": "2026/11/29 14:00:00", "venue": "國家音樂廳", "city": "臺北市"},
-    {"time": "2026/12/01 19:00:00", "venue": "國家音樂廳", "city": "臺北市"},
-    {"time": "2026/12/02 19:00:00", "venue": "衛武營歌劇院", "city": "高雄市"}
+    {
+     "time": "2026/11/27 19:00:00",
+     "venue": "臺中國家歌劇院",
+     "city": "臺中市"
+    },
+    {
+     "time": "2026/11/29 14:00:00",
+     "venue": "國家音樂廳",
+     "city": "臺北市"
+    },
+    {
+     "time": "2026/12/01 19:00:00",
+     "venue": "國家音樂廳",
+     "city": "臺北市"
+    },
+    {
+     "time": "2026/12/02 19:00:00",
+     "venue": "衛武營歌劇院",
+     "city": "高雄市"
+    }
    ]
   },
   {
@@ -58,7 +90,68 @@
     "https://art.ltn.com.tw/article/breakingnews/5549005"
    ],
    "shows": [
-    {"time": "2026/12/12", "time_tbd": true, "venue": "高雄市文化中心至德堂", "city": "高雄市"}
+    {
+     "time": "2026/12/12",
+     "time_tbd": true,
+     "venue": "高雄市文化中心至德堂",
+     "city": "高雄市"
+    }
+   ]
+  },
+  {
+   "uid": "manual-shengdong-acg-2026",
+   "title": "聲動漫:ACG 音樂祭",
+   "category": "音樂",
+   "organizer": [
+    "聲動室內樂團"
+   ],
+   "web": "https://www.opentix.life/event/2032303556119486465",
+   "tickets": "https://www.opentix.life/event/2032303556119486465",
+   "source": "編輯",
+   "note": "編輯 10/18 補登",
+   "source_links": [
+    "https://www.opentix.life/event/2032303556119486465"
+   ],
+   "shows": [
+    {
+     "time": "2026/11/28 19:30:00",
+     "venue": "臺中市中山堂",
+     "city": "臺中市"
+    },
+    {
+     "time": "2026/12/12 19:30:00",
+     "venue": "文山劇場",
+     "city": "臺北市"
+    }
+   ]
+  },
+  {
+   "uid": "manual-kaohsiung-winter-manga-2026",
+   "title": "高雄冬漫祭 feat. アニメ交響コンサート（免費入場）",
+   "category": "音樂",
+   "organizer": [
+    "原動漫遊"
+   ],
+   "web": "https://expo.acgncc.com/2026winter_manga/",
+   "tickets": "https://expo.acgncc.com/2026winter_manga/",
+   "source": "編輯",
+   "note": "編輯 10/18 補登；免費入場",
+   "source_links": [
+    "https://expo.acgncc.com/2026winter_manga/"
+   ],
+   "shows": [
+    {
+     "time": "2026/11/28",
+     "time_tbd": true,
+     "venue": "捷運美麗島站",
+     "city": "高雄市"
+    },
+    {
+     "time": "2026/11/29",
+     "time_tbd": true,
+     "venue": "捷運美麗島站",
+     "city": "高雄市"
+    }
    ]
   }
  ]
