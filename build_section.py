@@ -83,9 +83,15 @@ def build(events, issue_date, days):
         if not by_region:
             dropped.append(ev["title"])
             continue
+        # 一列＝同一節目、同一天、同一場館；同天多場合併成一列並列出各場時間，
+        # 不同場館或不同日期分開列（編輯 2026-10-18 指定）
         for reg, shows in by_region.items():
-            shows.sort(key=lambda x: x[0])
-            rows[reg].append((shows[0][0], ev, shows))
+            groups = {}
+            for t, s in shows:
+                groups.setdefault((t.date(), norm_venue(s["venue"])), []).append((t, s))
+            for g in groups.values():
+                g.sort(key=lambda x: x[0])
+                rows[reg].append((g[0][0], ev, g))
     for reg in rows:
         rows[reg].sort(key=lambda r: r[0])
     return rows, dropped
@@ -124,7 +130,7 @@ def item_html(first, ev, shows):
         org_html = f" · 演出：{escape(ev['performer'])}"
     else:
         org_html = ""
-    if ev.get("note"):
+    if ev.get("note"):  # note 會顯示給讀者；內部註記請寫在 internal_note
         org_html += f" · {escape(ev['note'])}"
     return f"""<tr>
 <td width="86" valign="top" style="padding:10px 12px 10px 0;border-top:1px dotted #D4D1CA;font-family:{SANS};">

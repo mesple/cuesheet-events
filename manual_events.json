@@ -1,5 +1,5 @@
 {
- "說明": "新聞搜尋補漏：民間主辦、未登錄文化部開放資料的活動。格式同 events.json；source 一律為「新聞」，source_links 列出確認用的主辦頁或新聞。時間未公布的場次 time 只寫日期並加 time_tbd。編輯每期更新，過期場次由 build_section.py 自動略過。",
+ "說明": "新聞搜尋補漏：民間主辦、未登錄文化部開放資料的活動。格式同 events.json；source 一律為「新聞」，source_links 列出確認用的主辦頁或新聞。時間未公布的場次 time 只寫日期並加 time_tbd。編輯每期更新，過期場次由 build_section.py 自動略過。 note 會顯示在電子報與活動頁給讀者看；只給編輯看的註記寫在 internal_note。",
  "updated": "2026-10-18",
  "events": [
   {
@@ -84,7 +84,6 @@
    "web": "https://www.4gamers.com.tw/news/detail/81463/world-of-warcraft-20-years-of-music-kaosiung-2026",
    "tickets": "https://ticket.ibon.com.tw/ActivityInfo/Details/39885",
    "source": "新聞",
-   "note": "開演時間依 ibon 售票頁（編輯 10/18 確認）",
    "source_links": [
     "https://ticket.ibon.com.tw/ActivityInfo/Details/39885",
     "https://www.4gamers.com.tw/news/detail/81463/world-of-warcraft-20-years-of-music-kaosiung-2026",
@@ -96,7 +95,8 @@
      "venue": "高雄市文化中心至德堂",
      "city": "高雄市"
     }
-   ]
+   ],
+   "internal_note": "開演時間依 ibon 售票頁（編輯 10/18 確認）；其餘依新聞"
   },
   {
    "uid": "manual-shengdong-acg-2026",
@@ -108,7 +108,6 @@
    "web": "https://www.opentix.life/event/2032303556119486465",
    "tickets": "https://www.opentix.life/event/2032303556119486465",
    "source": "編輯",
-   "note": "編輯 10/18 補登",
    "source_links": [
     "https://www.opentix.life/event/2032303556119486465"
    ],
@@ -123,7 +122,8 @@
      "venue": "文山劇場",
      "city": "臺北市"
     }
-   ]
+   ],
+   "internal_note": "編輯 10/18 補登"
   },
   {
    "uid": "manual-kaohsiung-winter-manga-2026",
@@ -135,7 +135,6 @@
    "web": "https://expo.acgncc.com/2026winter_manga/",
    "tickets": "https://expo.acgncc.com/2026winter_manga/",
    "source": "編輯",
-   "note": "編輯 10/18 補登；免費入場",
    "source_links": [
     "https://expo.acgncc.com/2026winter_manga/"
    ],
@@ -152,7 +151,8 @@
      "venue": "捷運美麗島站",
      "city": "高雄市"
     }
-   ]
+   ],
+   "internal_note": "編輯 10/18 補登；免費入場（已寫在標題）"
   }
  ]
 }
