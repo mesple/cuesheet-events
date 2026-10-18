@@ -1,5 +1,5 @@
 {
- "run_at": "2026-10-18T02:41:56+08:00",
+ "run_at": "2026-10-19T02:42:39+08:00",
  "categories": {
   "音樂": {
    "fetched": 18,
@@ -7,8 +7,8 @@
    "error": "疑似資料不完整：本次 18 筆，基準 491 筆，沿用上次資料"
   },
   "講座": {
-   "fetched": 94,
-   "baseline": 94,
+   "fetched": 91,
+   "baseline": 91,
    "error": null
   },
   "電影": {
@@ -26,6 +26,6 @@
   "音樂",
   "電影"
  ],
- "matched_events": 11,
+ "matched_events": 10,
  "candidates": 0
 }
