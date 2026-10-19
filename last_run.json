@@ -1,31 +1,32 @@
 {
- "run_at": "2026-10-19T02:42:39+08:00",
+ "run_at": "2026-10-20T00:31:48+08:00",
  "categories": {
   "音樂": {
-   "fetched": 18,
-   "baseline": 491,
-   "error": "疑似資料不完整：本次 18 筆，基準 491 筆，沿用上次資料"
+   "fetched": 470,
+   "baseline": 470,
+   "attempts": 1,
+   "error": null
   },
   "講座": {
-   "fetched": 91,
-   "baseline": 91,
+   "fetched": 114,
+   "baseline": 114,
+   "attempts": 1,
    "error": null
   },
   "電影": {
-   "fetched": 4,
-   "baseline": 196,
-   "error": "疑似資料不完整：本次 4 筆，基準 196 筆，沿用上次資料"
+   "fetched": 175,
+   "baseline": 175,
+   "attempts": 1,
+   "error": null
   },
   "演唱會": {
-   "fetched": 1,
-   "baseline": 1,
+   "fetched": 10,
+   "baseline": 10,
+   "attempts": 1,
    "error": null
   }
  },
- "carried_over": [
-  "音樂",
-  "電影"
- ],
+ "carried_over": [],
  "matched_events": 10,
- "candidates": 0
+ "candidates": 4
 }
