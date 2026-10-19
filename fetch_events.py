@@ -6,6 +6,7 @@
 import json
 import re
 import sys
+import time
 import urllib.request
 from datetime import date, datetime, timezone, timedelta
 
@@ -70,10 +71,36 @@ def parse_date(s):
     return None
 
 
-def fetch(cat):
+RETRY_WAITS = [30, 90, 180]  # 失敗或資料不完整時，分別等這麼多秒再重試
+
+
+def fetch_once(cat):
     req = urllib.request.Request(API.format(cat), headers={"User-Agent": "cuesheet-events (GitHub Actions)"})
-    with urllib.request.urlopen(req, timeout=60) as r:
+    with urllib.request.urlopen(req, timeout=120) as r:
         return json.loads(r.read().decode("utf-8-sig"))
+
+
+def fetch(cat, baseline):
+    """抓取一個類別；逾時、連線錯誤或筆數驟降時重試。
+
+    回傳 (資料, 嘗試次數, 最後的問題說明或 None)。全部失敗時資料為 None。
+    """
+    last_problem, best = None, None
+    for attempt in range(len(RETRY_WAITS) + 1):
+        if attempt:
+            time.sleep(RETRY_WAITS[attempt - 1])
+        try:
+            data = fetch_once(cat)
+        except Exception as e:
+            last_problem = f"{type(e).__name__}: {e}"
+            continue
+        if best is None or len(data) > len(best):
+            best = data
+        if baseline >= 20 and len(data) < baseline * SHRINK_LIMIT:
+            last_problem = f"疑似資料不完整：{len(data)} 筆，基準 {baseline} 筆"
+            continue
+        return data, attempt + 1, None
+    return best, len(RETRY_WAITS) + 1, last_problem
 
 
 def main():
@@ -93,21 +120,16 @@ def main():
     for cat, name in CATEGORIES.items():
         prev = prev_log.get(name, {})
         baseline = prev.get("baseline") or prev.get("fetched") or 0
-        try:
-            data = fetch(cat)
-        except Exception as e:  # 記錄失敗原因，不中斷其他類別
-            log["categories"][name] = {"fetched": 0, "baseline": baseline,
-                                       "error": f"{type(e).__name__}: {e}"}
-            carried.append(name)
-            continue
-        if baseline >= 20 and len(data) < baseline * SHRINK_LIMIT:
-            # 筆數驟降：視為資料不完整，這個類別沿用上一次的結果
+        data, attempts, problem = fetch(cat, baseline)
+        if problem:
+            # 重試後仍失敗或資料不完整：這個類別沿用上一次的結果，不中斷其他類別
             log["categories"][name] = {
-                "fetched": len(data), "baseline": baseline,
-                "error": f"疑似資料不完整：本次 {len(data)} 筆，基準 {baseline} 筆，沿用上次資料"}
+                "fetched": len(data or []), "baseline": baseline, "attempts": attempts,
+                "error": f"{problem}（共試 {attempts} 次），沿用上次資料"}
             carried.append(name)
             continue
-        log["categories"][name] = {"fetched": len(data), "baseline": len(data), "error": None}
+        log["categories"][name] = {"fetched": len(data), "baseline": len(data),
+                                   "attempts": attempts, "error": None}
 
         for ev in data:
             index.append({

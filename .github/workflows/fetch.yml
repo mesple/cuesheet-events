@@ -2,7 +2,7 @@ name: 每日抓取藝文活動
 
 on:
   schedule:
-    - cron: "17 18 * * *"   # 每天臺灣時間 02:17
+    - cron: "17 23 * * *"   # 每天臺灣時間 07:17（避開深夜資料更新時段）
   workflow_dispatch:         # 允許在 Actions 頁面手動執行
 
 permissions:
@@ -11,6 +11,7 @@ permissions:
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
