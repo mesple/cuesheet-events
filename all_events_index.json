@@ -4230,6 +4230,69 @@
 "start_date": "2026/11/27"
 },
 {
+"uid": "6ad6504b26b3245efc7536ac",
+"category": "音樂",
+"title": "維也納銅管樂團《LIVE》2026臺灣巡演",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2106995701583536129",
+"start_date": "2026/12/13"
+},
+{
+"uid": "6ad6504b26b3245efc7536ad",
+"category": "音樂",
+"title": "HSO市民管弦樂團定期音樂會系列二",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2107090102655930369",
+"start_date": "2026/12/19"
+},
+{
+"uid": "6ad6504b26b3245efc7536ae",
+"category": "音樂",
+"title": "《雙城樂章》虹韻新春音樂會",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2107728173323550721",
+"start_date": "2027/02/27"
+},
+{
+"uid": "6ad6504b26b3245efc7536af",
+"category": "音樂",
+"title": "蔡珂宜Chloe Chua－2027亞洲巡迴音樂會台灣首演",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2108010089152028673",
+"start_date": "2027/01/02"
+},
+{
+"uid": "6ad6504b26b3245efc7536b0",
+"category": "音樂",
+"title": "孫小媚大提琴獨奏會《羅斯托波維奇委託創作大提琴作品》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2108023234678923264",
+"start_date": "2027/01/09"
+},
+{
+"uid": "6ad6504b26b3245efc7536b1",
+"category": "音樂",
+"title": "《蘇珊娜》── 弗洛依德歌劇中的孤獨、偏見與憐憫",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2108438341275090945",
+"start_date": "2026/12/27"
+},
+{
+"uid": "6ad6504b26b3245efc7536b2",
+"category": "音樂",
+"title": "《巡禮之年》陳世偉鋼琴獨奏會",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2109824911699013633",
+"start_date": "2026/11/11"
+},
+{
 "uid": "68950a2f26b324477c8a1474",
 "category": "講座",
 "title": "生活工藝館-陶藝DIY手作體驗",
@@ -6831,6 +6894,42 @@
 "start_date": "2026/11/15"
 },
 {
+"uid": "6ad658f626b3245efc7536b9",
+"category": "電影",
+"title": "11月高雄市電影館｜雙面薇若妮卡",
+"performer": "",
+"description": "",
+"web": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HF16B6",
+"start_date": "2026/11/14"
+},
+{
+"uid": "6ad658f626b3245efc7536ba",
+"category": "電影",
+"title": "11月高雄市電影館｜紅色情深",
+"performer": "",
+"description": "",
+"web": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HF16BD",
+"start_date": "2026/11/15"
+},
+{
+"uid": "6ad658f626b3245efc7536bb",
+"category": "電影",
+"title": "11月高雄市電影館｜白色情迷",
+"performer": "",
+"description": "",
+"web": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HF16BK",
+"start_date": "2026/11/28"
+},
+{
+"uid": "6ad658f626b3245efc7536bc",
+"category": "電影",
+"title": "11月高雄市電影館｜藍色情挑",
+"performer": "",
+"description": "",
+"web": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HF16BR",
+"start_date": "2026/11/28"
+},
+{
 "uid": "681fa5d226b3242b74a3ba7f",
 "category": "演唱會",
 "title": "「2026年國際沈文程日-小琉球情歌演唱會」 ",
@@ -6919,5 +7018,14 @@
 "description": "",
 "web": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1G9ESVP",
 "start_date": "2026/12/05"
+},
+{
+"uid": "6ad658f626b3245efc7536b8",
+"category": "演唱會",
+"title": "陽帆《堅持再堅持》演唱會",
+"performer": "",
+"description": "",
+"web": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1GUY38Z",
+"start_date": "2027/01/09"
 }
 ]
