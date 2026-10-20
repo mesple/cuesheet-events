@@ -357,7 +357,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2061101629433319425",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6a2c3bea26b3243414ccd21b",
@@ -501,7 +501,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2062012882677915648",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6a45485726b32427d0604019",
@@ -1834,15 +1834,6 @@
 "description": "",
 "web": "https://www.opentix.life/program/2087479254200844289",
 "start_date": "2026/12/27"
-},
-{
-"uid": "6a87330526b32427d0604456",
-"category": "音樂",
-"title": "風中三語",
-"performer": "",
-"description": "",
-"web": "https://www.opentix.life/program/2077302916214165505",
-"start_date": "2026/10/20"
 },
 {
 "uid": "6a87330526b32427d0604457",
@@ -3251,7 +3242,7 @@
 {
 "uid": "6abbf23526b324165c32e54d",
 "category": "音樂",
-"title": "「聲聲無界」系列－跨越想像的弦樂旅程",
+"title": "醫聲無界系列－跨越想像的弦樂旅程",
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2104825705148162048",
@@ -4291,6 +4282,96 @@
 "description": "",
 "web": "https://www.opentix.life/program/2109824911699013633",
 "start_date": "2026/11/11"
+},
+{
+"uid": "6ad7a1c226b3245efc7536bd",
+"category": "音樂",
+"title": "侯傳安 小號獨奏會",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2105498807602659329",
+"start_date": "2026/12/23"
+},
+{
+"uid": "6ad7a1c226b3245efc7536be",
+"category": "音樂",
+"title": "2026 榮星混聲合唱團「 弦外・知音」年度音樂會",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2107477937722359809",
+"start_date": "2026/11/14"
+},
+{
+"uid": "6ad7a1c226b3245efc7536bf",
+"category": "音樂",
+"title": "【奧影流光】高雄之音管樂團第54場定期音樂會",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2108036054516785153",
+"start_date": "2027/01/02"
+},
+{
+"uid": "6ad7a1c226b3245efc7536c0",
+"category": "音樂",
+"title": "未完成｜唐律長笛合奏團42與排笛的深情對話｜張中立",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2108039042834538497",
+"start_date": "2026/12/03"
+},
+{
+"uid": "6ad7a1c226b3245efc7536c1",
+"category": "音樂",
+"title": "《致斯拉瓦》詹書婷2026大提琴獨奏會",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2109585817105657856",
+"start_date": "2026/12/30"
+},
+{
+"uid": "6ad7a1c226b3245efc7536c2",
+"category": "音樂",
+"title": "光與影之間：台灣與荷蘭的聲音對話",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2109864523326427137",
+"start_date": "2026/12/16"
+},
+{
+"uid": "6ad7a1c226b3245efc7536c3",
+"category": "音樂",
+"title": "《低語》蕭立群上低音薩克斯風獨奏會",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2109898501815463936",
+"start_date": "2026/12/20"
+},
+{
+"uid": "6ad7a1c226b3245efc7536c4",
+"category": "音樂",
+"title": "《從小到大人人愛！》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110619563387166721",
+"start_date": "2026/11/13"
+},
+{
+"uid": "6ad7a1c226b3245efc7536c5",
+"category": "音樂",
+"title": "夜之靜域 何婉甄鋼琴獨奏會~~你不在的地方，才有幸福",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110677919551815681",
+"start_date": "2026/12/18"
+},
+{
+"uid": "6ad7a1c226b3245efc7536c6",
+"category": "音樂",
+"title": "靜心管弦．璀璨響宴—靜心樂團20週年音樂會",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2104867629078159360",
+"start_date": "2026/11/01"
 },
 {
 "uid": "68950a2f26b324477c8a1474",
@@ -5427,15 +5508,6 @@
 "start_date": "2026/10/24"
 },
 {
-"uid": "6aaaceca26b324165c32e423",
-"category": "電影",
-"title": "【女性影展】沒有的派對",
-"performer": "",
-"description": "",
-"web": "https://www.opentix.life/program/2092219899351474177",
-"start_date": "2026/10/20"
-},
-{
 "uid": "6aaaceca26b324165c32e425",
 "category": "電影",
 "title": "日光｜高雄電影節",
@@ -5461,15 +5533,6 @@
 "description": "",
 "web": "https://www.opentix.life/program/2092228511301009409",
 "start_date": "2026/10/22"
-},
-{
-"uid": "6aaaceca26b324165c32e428",
-"category": "電影",
-"title": "【女性影展】我們的青春與安妮艾諾",
-"performer": "",
-"description": "",
-"web": "https://www.opentix.life/program/2092531738563100673",
-"start_date": "2026/10/20"
 },
 {
 "uid": "6aaaceca26b324165c32e42a",
@@ -5499,22 +5562,13 @@
 "start_date": "2026/10/21"
 },
 {
-"uid": "6aaaceca26b324165c32e42d",
-"category": "電影",
-"title": "奔跑的孩子｜高雄電影節",
-"performer": "",
-"description": "",
-"web": "https://www.opentix.life/program/2092600347863945217",
-"start_date": "2026/10/20"
-},
-{
 "uid": "6aaaceca26b324165c32e42e",
 "category": "電影",
 "title": "《蒙娜麗莎失竊案》｜TTXC XR DREAMLAND",
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2092794683058720768",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e42f",
@@ -5523,7 +5577,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2092829498235555841",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e430",
@@ -5532,7 +5586,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2092851308992823297",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e431",
@@ -5541,7 +5595,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2092879981204303873",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e432",
@@ -5550,7 +5604,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2092890725263478785",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e433",
@@ -5559,7 +5613,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2092895140825403393",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e434",
@@ -5568,7 +5622,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2092898268832468993",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e436",
@@ -5577,7 +5631,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2092906821878157313",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e437",
@@ -5595,7 +5649,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2092910801518632961",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e439",
@@ -5613,7 +5667,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2092914611609497601",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e43b",
@@ -5622,16 +5676,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2092917256832552961",
-"start_date": "2026/10/20"
-},
-{
-"uid": "6aaaceca26b324165c32e43c",
-"category": "電影",
-"title": "【女性影展】里昂的跫音",
-"performer": "",
-"description": "",
-"web": "https://www.opentix.life/program/2092919003811454977",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e43d",
@@ -5640,7 +5685,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2092920868162805761",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e43f",
@@ -5658,7 +5703,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093177227779407873",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e441",
@@ -5685,7 +5730,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093190861084594177",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e444",
@@ -5694,7 +5739,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093213577971896321",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e445",
@@ -5703,7 +5748,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093219102645260289",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e446",
@@ -5712,7 +5757,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093221864686317568",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e447",
@@ -5721,7 +5766,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093224743564709889",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e448",
@@ -5730,7 +5775,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093230827244228609",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e449",
@@ -5739,7 +5784,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093235665821732865",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e44a",
@@ -5748,7 +5793,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093238396562501633",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e44b",
@@ -5757,7 +5802,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093242250145009664",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e44c",
@@ -5766,7 +5811,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093244680865742849",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e44d",
@@ -5775,7 +5820,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093249180020215809",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e44e",
@@ -5784,7 +5829,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093260714671738881",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e44f",
@@ -5793,7 +5838,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093264250103754752",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e450",
@@ -5802,7 +5847,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093267808720842753",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e451",
@@ -5820,7 +5865,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093272638042017793",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e455",
@@ -5829,7 +5874,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093276301153243137",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaaceca26b324165c32e456",
@@ -5838,7 +5883,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2093279928286277633",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaacecb26b324165c32e457",
@@ -5877,15 +5922,6 @@
 "start_date": "2026/10/23"
 },
 {
-"uid": "6aaacecb26b324165c32e45b",
-"category": "電影",
-"title": "飛瀑怒潮｜高雄電影節",
-"performer": "",
-"description": "",
-"web": "https://www.opentix.life/program/2094262373172322305",
-"start_date": "2026/10/20"
-},
-{
 "uid": "6aaacecb26b324165c32e45c",
 "category": "電影",
 "title": "男人的野心 4K修復｜高雄電影節",
@@ -5904,15 +5940,6 @@
 "start_date": "2026/10/22"
 },
 {
-"uid": "6aaacecb26b324165c32e45e",
-"category": "電影",
-"title": "真愛一世情 4K修復｜高雄電影節",
-"performer": "",
-"description": "",
-"web": "https://www.opentix.life/program/2094266871789879297",
-"start_date": "2026/10/20"
-},
-{
 "uid": "6aaacecb26b324165c32e45f",
 "category": "電影",
 "title": "心靈導失｜高雄電影節",
@@ -5928,16 +5955,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2094333246179020801",
-"start_date": "2026/10/20"
-},
-{
-"uid": "6aaacecb26b324165c32e462",
-"category": "電影",
-"title": "KitKat Club：柏林夜迷宮｜高雄電影節",
-"performer": "",
-"description": "",
-"web": "https://www.opentix.life/program/2094337799525183489",
-"start_date": "2026/10/20"
+"start_date": "2026/10/26"
 },
 {
 "uid": "6aaacecb26b324165c32e464",
@@ -5946,7 +5964,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2094341296840302593",
-"start_date": "2026/10/20"
+"start_date": "2026/10/21"
 },
 {
 "uid": "6aaacecb26b324165c32e465",
@@ -5973,7 +5991,7 @@
 "performer": "",
 "description": "",
 "web": "https://www.opentix.life/program/2094376913240850433",
-"start_date": "2026/10/20"
+"start_date": "2026/10/23"
 },
 {
 "uid": "6aaacecb26b324165c32e46b",
@@ -5992,15 +6010,6 @@
 "description": "",
 "web": "https://www.opentix.life/program/2094701118196297729",
 "start_date": "2026/10/26"
-},
-{
-"uid": "6aaacecb26b324165c32e46d",
-"category": "電影",
-"title": "鬥牛士 4K修復｜高雄電影節",
-"performer": "",
-"description": "",
-"web": "https://www.opentix.life/program/2094705659281158145",
-"start_date": "2026/10/20"
 },
 {
 "uid": "6aaacecb26b324165c32e46e",
@@ -6208,15 +6217,6 @@
 "description": "",
 "web": "https://www.opentix.life/program/2095113103713296384",
 "start_date": "2026/10/21"
-},
-{
-"uid": "6aaacecc26b324165c32e48f",
-"category": "電影",
-"title": "【女性影展】恨女的逆襲",
-"performer": "",
-"description": "",
-"web": "https://www.opentix.life/program/2095117850163863553",
-"start_date": "2026/10/20"
 },
 {
 "uid": "6aaacecc26b324165c32e490",
@@ -6543,15 +6543,6 @@
 "start_date": "2026/10/21"
 },
 {
-"uid": "6aaacecc26b324165c32e4c0",
-"category": "電影",
-"title": "【女性影展】台灣競賽 #2",
-"performer": "",
-"description": "",
-"web": "https://www.opentix.life/program/2095466020107919361",
-"start_date": "2026/10/20"
-},
-{
 "uid": "6aaacecc26b324165c32e4c1",
 "category": "電影",
 "title": "藍色琥珀+純白艾蜜莉+紅髮男孩｜高雄電影節",
@@ -6669,15 +6660,6 @@
 "start_date": "2026/10/24"
 },
 {
-"uid": "6aaacecc26b324165c32e4d0",
-"category": "電影",
-"title": "雄影國際短片競賽：臺灣組 C｜高雄電影節",
-"performer": "",
-"description": "",
-"web": "https://www.opentix.life/program/2095824333012541441",
-"start_date": "2026/10/20"
-},
-{
 "uid": "6aaacecc26b324165c32e4d1",
 "category": "電影",
 "title": "雄影國際短片競賽：臺灣組 D｜高雄電影節",
@@ -6730,15 +6712,6 @@
 "description": "",
 "web": "https://www.opentix.life/program/2095838166095486977",
 "start_date": "2026/10/23"
-},
-{
-"uid": "6aaacecc26b324165c32e4d7",
-"category": "電影",
-"title": "雄影國際短片競賽：國際組 F｜高雄電影節",
-"performer": "",
-"description": "",
-"web": "https://www.opentix.life/program/2095841760703315969",
-"start_date": "2026/10/20"
 },
 {
 "uid": "6aaacecc26b324165c32e4d8",
@@ -6928,6 +6901,357 @@
 "description": "",
 "web": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HF16BR",
 "start_date": "2026/11/28"
+},
+{
+"uid": "6ad7a1c726b3245efc7536ce",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《甘露水》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110282297648160768",
+"start_date": "2026/11/27"
+},
+{
+"uid": "6ad7a1c726b3245efc7536cf",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《五輪物語》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110283548903137280",
+"start_date": "2026/12/13"
+},
+{
+"uid": "6ad7a1c726b3245efc7536d0",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《一一：25周年4K經典修復版》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110284118310748161",
+"start_date": "2026/11/11"
+},
+{
+"uid": "6ad7a1c726b3245efc7536d1",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《尋秦記》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110284702401134593",
+"start_date": "2026/11/05"
+},
+{
+"uid": "6ad7a1c726b3245efc7536d2",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《殺出個黃昏》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110285350867312641",
+"start_date": "2026/11/13"
+},
+{
+"uid": "6ad7a1c726b3245efc7536d3",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《寒戰1994》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110285860785504257",
+"start_date": "2026/11/20"
+},
+{
+"uid": "6ad7a1c726b3245efc7536d4",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《熱戀年代》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110286548789723136",
+"start_date": "2026/11/26"
+},
+{
+"uid": "6ad7a1c726b3245efc7536d5",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《決戰投手丘》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110287008570437633",
+"start_date": "2026/12/06"
+},
+{
+"uid": "6ad7a1c726b3245efc7536d6",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《戰火浮生錄 數位修復版》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110287793807802369",
+"start_date": "2026/12/04"
+},
+{
+"uid": "6ad7a1c726b3245efc7536d7",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《時間暫停的季節》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110288548256980993",
+"start_date": "2026/11/06"
+},
+{
+"uid": "6ad7a1c726b3245efc7536d8",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《只是一場意外》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110289199828926465",
+"start_date": "2026/11/18"
+},
+{
+"uid": "6ad7a1c726b3245efc7536d9",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《單身動物園》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110290047224586241",
+"start_date": "2026/11/12"
+},
+{
+"uid": "6ad7a1c726b3245efc7536da",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《新浪潮》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110290729694191616",
+"start_date": "2026/12/09"
+},
+{
+"uid": "6ad7a1c726b3245efc7536db",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《只要我長大》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110292879505518592",
+"start_date": "2026/12/06"
+},
+{
+"uid": "6ad7a1c726b3245efc7536dc",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《人生海海》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110293362307796993",
+"start_date": "2026/12/26"
+},
+{
+"uid": "6ad7a1c726b3245efc7536dd",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《看見台灣》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110293949607428096",
+"start_date": "2026/12/19"
+},
+{
+"uid": "6ad7a1c726b3245efc7536de",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《冠軍之路》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110294547697799169",
+"start_date": "2026/12/18"
+},
+{
+"uid": "6ad7a1c726b3245efc7536df",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《超人力霸王．起源》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110295009687801857",
+"start_date": "2026/12/25"
+},
+{
+"uid": "6ad7a1c726b3245efc7536e0",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《96分鐘》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110295528221216769",
+"start_date": "2026/11/08"
+},
+{
+"uid": "6ad7a1c726b3245efc7536e1",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《世外》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110296058932563969",
+"start_date": "2026/11/22"
+},
+{
+"uid": "6ad7a1c726b3245efc7536e2",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《恨女的逆襲》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110296660139540481",
+"start_date": "2026/11/15"
+},
+{
+"uid": "6ad7a1c726b3245efc7536e3",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《張帝找阿珠 數位修復版》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110304290702954497",
+"start_date": "2026/11/15"
+},
+{
+"uid": "6ad7a1c726b3245efc7536e4",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《兩相好 數位修復版》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110305017086181377",
+"start_date": "2026/11/25"
+},
+{
+"uid": "6ad7a1c726b3245efc7536e5",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《泰山寶藏 數位修復版》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110305910869950464",
+"start_date": "2026/12/03"
+},
+{
+"uid": "6ad7a1c726b3245efc7536e6",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《夕陽西下 數位修復版》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110562157889855488",
+"start_date": "2026/12/17"
+},
+{
+"uid": "6ad7a1c726b3245efc7536e7",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《一生二命》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110563163684892672",
+"start_date": "2026/11/21"
+},
+{
+"uid": "6ad7a1c726b3245efc7536e8",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《我家有棵芒果樹》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110563817309192193",
+"start_date": "2026/11/07"
+},
+{
+"uid": "6ad7a1c726b3245efc7536e9",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《嘰嘰王子：宇宙無敵》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110564668282400769",
+"start_date": "2026/12/26"
+},
+{
+"uid": "6ad7a1c726b3245efc7536ea",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《好奇寶貝方城市－法國新影像學院兒童動畫短片精選》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110565690065346561",
+"start_date": "2026/12/25"
+},
+{
+"uid": "6ad7a1c726b3245efc7536eb",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《牛奶小姐幫幫忙》+《雛菊盛開前》+《防颱準備》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110574045527244801",
+"start_date": "2026/11/29"
+},
+{
+"uid": "6ad7a1c726b3245efc7536ec",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《蘿拉的魔法鋼琴》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110576431057715201",
+"start_date": "2026/12/19"
+},
+{
+"uid": "6ad7a1c726b3245efc7536ed",
+"category": "電影",
+"title": "【府中15】紀錄片放映院《蹦蹦奇遇森友會》",
+"performer": "",
+"description": "",
+"web": "https://www.opentix.life/program/2110578136589893633",
+"start_date": "2026/12/20"
+},
+{
+"uid": "6ad7bb5f26b3245efc7536ee",
+"category": "電影",
+"title": "11月高雄市電影館｜沙央",
+"performer": "",
+"description": "",
+"web": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0PV",
+"start_date": "2026/11/06"
+},
+{
+"uid": "6ad7bb5f26b3245efc7536ef",
+"category": "電影",
+"title": "11月高雄市電影館｜世紀初戀 楊麗花",
+"performer": "",
+"description": "",
+"web": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q2",
+"start_date": "2026/11/06"
+},
+{
+"uid": "6ad7bb5f26b3245efc7536f0",
+"category": "電影",
+"title": "11月高雄市電影館｜屍控片場性愛死",
+"performer": "",
+"description": "",
+"web": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE0Q9",
+"start_date": "2026/11/06"
+},
+{
+"uid": "6ad7bb5f26b3245efc7536f1",
+"category": "電影",
+"title": "11月高雄市電影館｜廚師發辦",
+"performer": "",
+"description": "",
+"web": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE3O0",
+"start_date": "2026/11/06"
+},
+{
+"uid": "6ad7bb5f26b3245efc7536f2",
+"category": "電影",
+"title": "11月高雄市電影館｜與畢諾許共舞",
+"performer": "",
+"description": "",
+"web": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE3O7",
+"start_date": "2026/11/06"
+},
+{
+"uid": "6ad7bb6026b3245efc7536f3",
+"category": "電影",
+"title": "11月高雄市電影館｜讓子彈飛 全新4K修復版",
+"performer": "",
+"description": "",
+"web": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE3OE",
+"start_date": "2026/11/06"
+},
+{
+"uid": "6ad7bb6026b3245efc7536f4",
+"category": "電影",
+"title": "11月高雄市電影館｜與達賴喇嘛談心：尋找幸福的智慧",
+"performer": "",
+"description": "",
+"web": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE3OL",
+"start_date": "2026/11/07"
 },
 {
 "uid": "681fa5d226b3242b74a3ba7f",
