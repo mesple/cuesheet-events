@@ -1,21 +1,21 @@
 {
- "run_at": "2026-10-21T07:43:47+08:00",
+ "run_at": "2026-10-22T07:46:08+08:00",
  "categories": {
   "音樂": {
-   "fetched": 486,
-   "baseline": 486,
+   "fetched": 488,
+   "baseline": 488,
    "attempts": 1,
    "error": null
   },
   "講座": {
-   "fetched": 114,
-   "baseline": 114,
+   "fetched": 113,
+   "baseline": 113,
    "attempts": 1,
    "error": null
   },
   "電影": {
-   "fetched": 206,
-   "baseline": 206,
+   "fetched": 201,
+   "baseline": 201,
    "attempts": 1,
    "error": null
   },
@@ -27,6 +27,6 @@
   }
  },
  "carried_over": [],
- "matched_events": 10,
+ "matched_events": 12,
  "candidates": 4
 }

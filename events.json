@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T07:43:47+08:00",
+ "updated": "2026-10-22T07:46:08+08:00",
  "source": "文化部藝文活動開放資料（政府資料開放授權條款）",
  "events": [
   {
@@ -92,6 +92,150 @@
     "動漫",
     "acg",
     "電玩"
+   ]
+  },
+  {
+   "uid": "6ad91d1d26b3245efc7536ff",
+   "title": "11月高雄市電影館｜我們，巴黎管弦樂團",
+   "category": "電影",
+   "start_date": "2026/11/13",
+   "end_date": "2026/11/26",
+   "organizer": [],
+   "performer": "",
+   "description": "",
+   "image": null,
+   "web": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE3OS",
+   "tickets": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE3OS",
+   "source_site": "年代",
+   "cities": [
+    "高雄市"
+   ],
+   "shows": [
+    {
+     "time": "2026/11/13 19:50:00",
+     "end_time": "2026/11/13 23:59:00",
+     "venue": "內惟藝術中心 Reel two 2廳",
+     "address": "高雄市鼓山區馬卡道路329號",
+     "city": "高雄市",
+     "lat": null,
+     "lng": null,
+     "on_sale": "Y",
+     "price": "260"
+    },
+    {
+     "time": "2026/11/14 11:30:00",
+     "end_time": "2026/11/14 23:59:00",
+     "venue": "內惟藝術中心 Reel one 1廳",
+     "address": "高雄市鼓山區馬卡道路329號",
+     "city": "高雄市",
+     "lat": null,
+     "lng": null,
+     "on_sale": "Y",
+     "price": "260"
+    },
+    {
+     "time": "2026/11/15 16:30:00",
+     "end_time": "2026/11/15 23:59:00",
+     "venue": "內惟藝術中心 Reel two 2廳",
+     "address": "高雄市鼓山區馬卡道路329號",
+     "city": "高雄市",
+     "lat": null,
+     "lng": null,
+     "on_sale": "Y",
+     "price": "260"
+    },
+    {
+     "time": "2026/11/17 14:50:00",
+     "end_time": "2026/11/17 23:59:00",
+     "venue": "內惟藝術中心 Reel one 1廳",
+     "address": "高雄市鼓山區馬卡道路329號",
+     "city": "高雄市",
+     "lat": null,
+     "lng": null,
+     "on_sale": "Y",
+     "price": "260"
+    },
+    {
+     "time": "2026/11/18 16:30:00",
+     "end_time": "2026/11/18 23:59:00",
+     "venue": "高雄市電影館3樓",
+     "address": "高雄市鹽埕區河西路10號",
+     "city": "高雄市",
+     "lat": "22.62268",
+     "lng": "120.2891198",
+     "on_sale": "Y",
+     "price": "260"
+    },
+    {
+     "time": "2026/11/19 19:10:00",
+     "end_time": "2026/11/19 23:59:00",
+     "venue": "高雄市電影館3樓",
+     "address": "高雄市鹽埕區河西路10號",
+     "city": "高雄市",
+     "lat": "22.62268",
+     "lng": "120.2891198",
+     "on_sale": "Y",
+     "price": "260"
+    },
+    {
+     "time": "2026/11/20 14:00:00",
+     "end_time": "2026/11/20 23:59:00",
+     "venue": "高雄市電影館3樓",
+     "address": "高雄市鹽埕區河西路10號",
+     "city": "高雄市",
+     "lat": "22.62268",
+     "lng": "120.2891198",
+     "on_sale": "Y",
+     "price": "260"
+    },
+    {
+     "time": "2026/11/26 18:40:00",
+     "end_time": "2026/11/26 23:59:00",
+     "venue": "內惟藝術中心 Reel two 2廳",
+     "address": "高雄市鼓山區馬卡道路329號",
+     "city": "高雄市",
+     "lat": null,
+     "lng": null,
+     "on_sale": "Y",
+     "price": "260"
+    }
+   ],
+   "matched_keywords": [
+    "電影",
+    "樂團"
+   ]
+  },
+  {
+   "uid": "6ad91d1d26b3245efc753703",
+   "title": "11月高雄市電影館｜坂本龍一・永恆的迴響",
+   "category": "電影",
+   "start_date": "2026/11/14",
+   "end_date": "2026/11/14",
+   "organizer": [],
+   "performer": "",
+   "description": "",
+   "image": null,
+   "web": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE3PK",
+   "tickets": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1HFE3PK",
+   "source_site": "年代",
+   "cities": [
+    "高雄市"
+   ],
+   "shows": [
+    {
+     "time": "2026/11/14 17:10:00",
+     "end_time": "2026/11/14 23:59:00",
+     "venue": "內惟藝術中心 Reel one 1廳",
+     "address": "高雄市鼓山區馬卡道路329號",
+     "city": "高雄市",
+     "lat": null,
+     "lng": null,
+     "on_sale": "Y",
+     "price": "260"
+    }
+   ],
+   "matched_keywords": [
+    "坂本龍一"
    ]
   },
   {
