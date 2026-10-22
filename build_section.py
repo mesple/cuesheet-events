@@ -41,7 +41,7 @@ def kind(ev):
     t = ev["title"] + ev.get("category", "")
     if "講座" in t or "大師課" in t or ev.get("category") == "講座":
         return "講座"
-    if "影展" in t:
+    if "影展" in t or ev.get("category") == "電影":
         return "影展活動"
     return "音樂會"
 

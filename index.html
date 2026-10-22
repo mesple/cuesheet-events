@@ -103,7 +103,7 @@ function parseTime(s){
 function kindOf(ev){
   const t = (ev.title||"") + (ev.category||"");
   if (t.includes("講座") || t.includes("大師課") || ev.category === "講座") return "講座";
-  if (t.includes("影展")) return "影展活動";
+  if (t.includes("影展") || ev.category === "電影") return "影展活動";
   return "音樂會";
 }
 function normVenue(v){ return (v||"").replace(/臺/g,"台").replace(/\s/g,"").replace("國家音樂廳","音樂廳"); }
