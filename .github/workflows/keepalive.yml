@@ -1,0 +1,37 @@
+name: 防止排程停用
+
+# GitHub 會停用公開 repo 中 60 天沒有活動的排程。
+# 這個流程每月 1 日檢查：最近 40 天如果沒有任何提交，就更新 keepalive.txt 留下一筆提交。
+# 平常每日抓取都有提交，這裡什麼都不會做。
+
+on:
+  schedule:
+    - cron: "41 0 1 * *"   # 每月 1 日臺灣時間 08:41
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+      - name: 最近 40 天沒有提交才留紀錄
+        run: |
+          last=$(git log -1 --format=%ct)
+          now=$(date +%s)
+          days=$(( (now - last) / 86400 ))
+          echo "距離上次提交 ${days} 天"
+          if [ "$days" -lt 40 ]; then
+            echo "最近有提交，不需要動作"
+            exit 0
+          fi
+          date -u +%FT%TZ > keepalive.txt
+          git config user.name "cuesheet-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add keepalive.txt
+          git commit -m "防止排程停用 $(date -u +%F)"
+          git push
