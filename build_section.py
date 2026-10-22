@@ -85,10 +85,14 @@ def build(events, issue_date, days):
             continue
         # 一列＝同一節目、同一天、同一場館；同天多場合併成一列並列出各場時間，
         # 不同場館或不同日期分開列（編輯 2026-10-18 指定）
+        # 例外：電影放映（文化部「電影」類）同一部片在同一地區的所有場次合併成一列，
+        # 寫「首日–末日、共 N 場」（編輯 2026-10-22 指定）
+        screening = ev.get("category") == "電影"
         for reg, shows in by_region.items():
             groups = {}
             for t, s in shows:
-                groups.setdefault((t.date(), norm_venue(s["venue"])), []).append((t, s))
+                key = "all" if screening else (t.date(), norm_venue(s["venue"]))
+                groups.setdefault(key, []).append((t, s))
             for g in groups.values():
                 g.sort(key=lambda x: x[0])
                 rows[reg].append((g[0][0], ev, g))
@@ -112,12 +116,15 @@ def item_html(first, ev, shows):
             date_txt = "<br>".join(f"{d.month}/{d.day}" for d in dates)
         else:
             date_txt = f"{dates[0].month}/{dates[0].day}–{dates[-1].month}/{dates[-1].day}"
-        sub = f"共 {len(dates)} 場"
-    venues = []
+        sub = f"共 {len(shows)} 場"
+    # 同一城市的場館只寫一次城市名：「高雄・A、B」
+    by_city = {}
     for _, s in shows:
-        v = f"{s['city'][:2]}・{s['venue'] or '場地未標示'}"
-        if v not in venues:
-            venues.append(v)
+        vs = by_city.setdefault(s["city"][:2], [])
+        v = s["venue"] or "場地未標示"
+        if v not in vs:
+            vs.append(v)
+    venues = [f"{c}・{'、'.join(vs)}" for c, vs in by_city.items()]
     link = ev.get("tickets") or ev.get("web")
     link_html = (f' · <a href="{escape(link)}" style="color:#01696F;">購票／詳情</a>'
                  if link else "")
